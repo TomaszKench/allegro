@@ -1,0 +1,27 @@
+$background-color: rgb(14, 1, 32);
+$border-colors: (
+    "main": rgb(200, 200, 200),
+    "focus": rgb(235, 235, 235),
+);
+$font-colors: (
+    "main": rgb(200, 200, 200),
+    "focus": rgb(235, 235, 235),
+    "placeholder": rgb(116, 110, 110),
+    "error": rgb(155, 60, 60),
+);
+$loading-spin-color: rgb(117, 117, 117);
+$font-sizes: (
+    "small": 0.9rem,
+    "medium": 1rem,
+    "large": 1.2rem,
+);
+$form-control-transition-duration: 0.15s;
+$form-control-border-width: 2px;
+$show-list-transition-duration: 0.3s;
+$loading-spin-animation-duration: 1.5s;
+
+$breakpoints: (
+    "small": 576px,
+    "medium": 768px,
+    "large": 992px,
+);

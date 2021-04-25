@@ -1,0 +1,23 @@
+.loading-spin {
+    width: 70px;
+    height: 70px;
+    border: 7px solid transparent;
+    border-top-color: $loading-spin-color;
+    border-radius: 50%;
+    $animation-name: unique-id();
+    animation-name: $animation-name;
+    animation-duration: $loading-spin-animation-duration;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @keyframes #{$animation-name} {
+        from {
+            transform: translate(-50%, -50%);
+            transform: rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%);
+            transform: rotate(360deg);
+        }
+    }
+}

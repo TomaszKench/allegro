@@ -1,0 +1,12 @@
+.button {
+    background-color: transparent;
+    border: $form-control-border-width solid map-get($border-colors, "main");
+    cursor: pointer;
+    color: map-get($font-colors, "main");
+    font-size: map-get($font-sizes, "large");
+    @include base-form-control-transition("border", "color");
+    &:hover {
+        color: map-get($font-colors, "focus");
+        border-color: map-get($border-colors, "focus");
+    }
+}

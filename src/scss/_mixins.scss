@@ -1,0 +1,10 @@
+@mixin base-form-control-transition($transition-properties...) {
+    transition-duration: $form-control-transition-duration;
+    transition-timing-function: linear;
+    transition-property: $transition-properties;
+}
+@mixin min-width($breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
